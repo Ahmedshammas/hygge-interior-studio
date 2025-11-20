@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! | Hygge Interior Studio</title>
+    <meta name="description" content="Thank you for contacting Hygge Interior Studio. We have received your message and will get back to you shortly.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Page header background */
+        .page-header-bg {
+            /* MODIFIED: Updated placeholder URL, the old one was broken */
+            background-image: url('https://plus.unsplash.com/premium_photo-1726804902091-56f8782fa83d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1149');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold font-serif text-stone-900">
+                <span>Hygge Interior Studio</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-stone-600 hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="text-stone-600 hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="text-stone-600 hover:text-stone-900 transition-colors">Services</a>
+                <a href="projects.html" class="text-stone-600 hover:text-stone-900 transition-colors">Projects</a>
+                <a href="contact.html" class="text-stone-600 hover:text-stone-900 transition-colors">Contact</a>
+            </nav>
+            <a href="contact.html" class="hidden md:block bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900 transition-colors">Get a Quote</a>
+            <!-- MODIFIED: Fixed typo md-hidden to md:hidden -->
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-stone-600 hover:text-stone-900">Home</a>
+            <a href="about.html" class="block py-2 text-stone-600 hover:text-stone-900">About</a>
+            <a href="services.html" class="block py-2 text-stone-600 hover:text-stone-900">Services</a>
+            <a href="projects.html" class="block py-2 text-stone-600 hover:text-stone-900">Projects</a>
+            <a href="contact.html" class="block py-2 text-stone-600 hover:text-stone-900">Contact</a>
+            <a href="contact.html" class="block mt-2 text-center bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <!-- MODIFIED: Responsive height, padding, and font size -->
+        <section class="page-header-bg h-60 md:h-80 flex items-center justify-center text-white pt-16 md:pt-20">
+            <div class="bg-black/50 p-8 md:p-10 rounded-lg text-center backdrop-blur-sm mx-4">
+                <h1 class="text-3xl md:text-5xl font-bold font-serif">Thank You!</h1>
+            </div>
+        </section>
+
+        <!-- Thank You Message Section -->
+        <!-- MODIFIED: Responsive padding -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h2 class="text-3xl font-serif text-stone-900">Your message has been sent.</h2>
+                <p class="mt-4 text-lg text-stone-600 leading-relaxed">
+                    We've received your request and will get back to you as soon as possible.
+                </p>
+                <a href="index.html" class="mt-8 inline-block bg-stone-800 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-stone-900 transition-colors">
+                    Back to Home
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-stone-800 border-t border-stone-200">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-12 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="text-2xl font-bold font-serif text-stone-900">Hygge Interior Studio</a>
+                    <p class="mt-2 text-stone-600 max-w-xs">
+                        Designing not just spaces, but emotions—warm, functional, and
+                        truly personal.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://www.instagram.com/hygge_interior_studio" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="Instagram">
+                        <img src="img/insta.png" alt="Instagram Icon" class="w-7 h-7">
+                    </a>
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://wa.me/917305259539" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="WhatsApp">
+                        <img src="img/whtsp.png" alt="WhatsApp Icon" class="w-7 h-7">
+                    </a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold">Explore</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-stone-600 hover:text-stone-900">Home</a></li>
+                        <li><a href="about.html" class="text-stone-600 hover:text-stone-900">About Us</a></li>
+                        <li><a href="services.html" class="text-stone-600 hover:text-stone-900">Services</a></li>
+                        <li><a href="projects.html" class="text-stone-600 hover:text-stone-900">Projects</a></li>
+                        <li><a href="contact.html" class="text-stone-600 hover:text-stone-900">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Get in Touch</h4>
+                    <ul class="mt-4 space-y-2 text-stone-600">
+                        <li class="flex items-center space-x-2">
+                             <img src="img/gmail.png" alt="Email" class="w-5 h-5"> 
+                            <a href="mailto:hyggedesignhub@gmail.com" class="hover:text-stone-900">hyggedesignhub@gmail.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                             <img src="img/phn.png" alt="Phone" class="w-5 h-5"> 
+                            <a href="tel:+917395908844" class="hover:text-stone-900">+91 7395908844</a>
+                        </li>
+                         <li class="flex items-center space-x-2">
+                            <img src="img/whtsp.png" alt="WhatsApp" class="w-5 h-5"> 
+                            <a href="https://wa.me/917305259539" class="hover:text-stone-900">+91 73052 59539</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Address Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Our Studio</h4>
+                    <p class="mt-4 space-y-2 text-stone-600">
+                        No.3/269 Pachiappan 8th Cross street,
+                        <br>Palavakkam, Chennai - 600041
+                    </p>
+                </div>
+            
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-12 border-t border-stone-200 pt-8 text-center text-stone-500">
+                <p>&copy; 2024 Hygge Interior Studio. All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
+

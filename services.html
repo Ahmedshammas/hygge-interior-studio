@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Hygge Interior Studio</title>
+    <meta name="description" content="Our services include painting, electrical works, false ceilings, glass & light works, civil renovations, and commercial interiors in Chennai.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .page-header-bg {
+            background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* --- Image Fade-in Hover Styles --- */
+        .service-card {
+            /* This is the main container */
+            position: relative;
+            background-color: #ffffff; /* bg-white */
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+            border: 1px solid #e7e5e4; /* border-stone-200 */
+            overflow: hidden; /* This is important! */
+            height: 250px; /* You can adjust this height */
+            transition: box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+        }
+        .service-card-content {
+            /* This is the text */
+            padding: 2rem; /* p-8 */
+            transition: opacity 0.4s ease-out;
+            opacity: 1; /* Visible by default */
+        }
+        .service-card-image {
+            /* This is the image */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0; /* Hidden by default */
+            transform: scale(1.1) rotate(5deg); /* Start scaled up and at a "cross angle" */
+            transition: opacity 0.4s ease-in, transform 0.4s ease-in;
+        }
+        
+        /* This is the "hover" magic */
+        .service-card:hover .service-card-content {
+            opacity: 0; /* Fade out text */
+        }
+        .service-card:hover .service-card-image {
+            opacity: 1; /* Fade in image */
+            transform: scale(1) rotate(0deg); /* Settle image into place */
+        }
+
+        
+    </style>
+</head>
+<body class="bg-white text-stone-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold font-serif text-stone-900">
+                <span>Hygge Interior Studio</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-stone-600 hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="text-stone-600 hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="text-stone-900 font-semibold transition-colors">Services</a>
+                <a href="projects.html" class="text-stone-600 hover:text-stone-900 transition-colors">Projects</a>
+                <a href="contact.html" class="text-stone-600 hover:text-stone-900 transition-colors">Contact</a>
+            </nav>
+            <a href="contact.html" class="hidden md:block bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900 transition-colors">Get a Quote</a>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-stone-600 hover:text-stone-900">Home</a>
+            <a href="about.html" class="block py-2 text-stone-600 hover:text-stone-900">About</a>
+            <a href="services.html" class="block py-2 text-stone-900 font-semibold">Services</a>
+            <a href="projects.html" class="block py-2 text-stone-600 hover:text-stone-900">Projects</a>
+            <a href="contact.html" class="block py-2 text-stone-600 hover:text-stone-900">Contact</a>
+            <a href="contact.html" class="block mt-2 text-center bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <!-- MODIFIED: Responsive height, padding, and font size -->
+        <section class="page-header-bg h-60 md:h-80 flex items-center justify-center text-white pt-16 md:pt-20">
+            <div class="bg-black/50 p-8 md:p-10 rounded-lg text-center backdrop-blur-sm mx-4">
+                <h1 class="text-3xl md:text-5xl font-bold font-serif">Our Services</h1>
+                <p class="mt-2 text-lg text-stone-200">End-to-end solutions for your space.</p>
+            </div>
+        </section>
+
+        <!-- Services Section (Fade-in Image Hover) -->
+        <section class="py-16 md:py-24 bg-stone-50">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-serif text-stone-900">What We Do</h2>
+                    <p class="mt-4 text-lg text-stone-600 leading-relaxed">
+                        We provide a comprehensive range of interior design and execution services. Hover over a service to see it in action.
+                    </p>
+                </div>
+                
+                <!-- Service Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    
+                    <!-- Service Item 1: Painting -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Painting & Polishing Works</h3>
+                            <p class="mt-3 text-stone-600">Smooth finish, lasting impressions. We handle all interior and exterior painting and polishing with meticulous attention to detail.</p>
+                        </div>
+                        <img src="https://sivasinteriors.com/wp-content/uploads/2024/08/Painting-Services-image-of-Painting-and-Polishing-Page-by-Sivas-Interiors-www.sivasinteriors.com_.png" alt="Painting" class="service-card-image">
+                    </div>
+
+                    <!-- Service Item 2: Electrical -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Electrical & Networking Works</h3>
+                            <p class="mt-3 text-stone-600">Power & connectivity, done right. Safe and efficient electrical wiring, lighting installation, and complete networking solutions.</p>
+                        </div>
+                        <img src="https://rusindustrial.com/wp-content/uploads/2025/01/Licensed-Electrical-Services.webp" alt="Electrical" class="service-card-image">
+                    </div>
+
+                    <!-- Service Item 3: Glass -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Glass & Light Works</h3>
+                            <p class="mt-3 text-stone-600">Elevate your space with ambient lighting. We design and install custom false ceilings, cove lighting, and elegant glass work to create a modern atmosphere.</p>
+                        </div>
+                        <img src="https://img.interiorcompany.com/interior/webproduct/886638709052803394699.png?aio=w-768;" alt="Glass Work" class="service-card-image">
+                    </div>
+
+                    <!-- Service Item 4: Partition -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Partition & Racks Work</h3>
+                            <p class="mt-3 text-stone-600">Smart space planning with custom solutions. We design and build partitions and storage racks tailored to your needs.</p>
+                        </div>
+                        <img src="https://assets-news.housing.com/news/wp-content/uploads/2023/01/25022640/200_0US-_American-Shelf-Office-Partition-Display-Shelf-Floor-Multi-layer-Bookshelf-Living-Room-Solid-Wood-Screen-Iron-Storage-Shelf-Magazine-Racks-AliExpress.png" alt="Partition" class="service-card-image">
+                    </div>
+
+                    <!-- Service Item 5: Civil -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Civil & Renovation Works</h3>
+                            <p class="mt-3 text-stone-600">From structure to style – complete transformations. We manage all civil work, including demolition, new construction, and remodeling.</p>
+                        </div>
+                        <img src="img/service/civil.jpg" alt="Renovation" class="service-card-image">
+                    </div>
+
+                    <!-- Service Item 6: Commercial -->
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3 class="text-xl font-serif font-bold text-stone-900">Commercial & Hospital Interiors</h3>
+                            <p class="mt-3 text-stone-600">Thoughtfully designed healing and professional environments, focusing on functionality and aesthetics for commercial spaces.</p>
+                        </div>
+                        <img src="img/service/hospitality.jpg" alt="Commercial Interior" class="service-card-image">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <!-- MODIFIED: Responsive padding -->
+        <section class="bg-stone-800 py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-3xl text-center text-white">
+                <!-- MODIFIED: Responsive font size -->
+                <h2 class="text-3xl md:text-4xl font-serif">Have a project in mind?</h2>
+                <p class="mt-4 text-lg text-stone-200 max-w-2xl mx-auto">We'd love to hear about it. Contact us for a consultation.</p>
+                <a href="contact.html" class="mt-8 inline-block bg-white text-stone-800 px-8 py-3 rounded-full text-lg font-semibold hover:bg-stone-200 transition-transform hover:scale-105">Get a Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-stone-800 border-t border-stone-200">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-12 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="text-2xl font-bold font-serif text-stone-900">Hygge Interior Studio</a>
+                    <p class="mt-2 text-stone-600 max-w-xs">
+                        Designing not just spaces, but emotions—warm, functional, and
+                        truly personal.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://www.instagram.com/hygge_interior_studio" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="Instagram">
+                        <img src="img/insta.png" alt="Instagram Icon" class="w-7 h-7">
+                    </a>
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://wa.me/917305259539" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="WhatsApp">
+                        <img src="img/whtsp.png" alt="WhatsApp Icon" class="w-7 h-7">
+                    </a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold">Explore</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-stone-600 hover:text-stone-900">Home</a></li>
+                        <li><a href="about.html" class="text-stone-600 hover:text-stone-900">About Us</a></li>
+                        <li><a href="services.html" class="text-stone-600 hover:text-stone-900">Services</a></li>
+                        <li><a href="projects.html" class="text-stone-600 hover:text-stone-900">Projects</a></li>
+                        <li><a href="contact.html" class="text-stone-600 hover:text-stone-900">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Get in Touch</h4>
+                    <ul class="mt-4 space-y-2 text-stone-600">
+                        <li class="flex items-center space-x-2">
+                             <img src="img/gmail.png" alt="Email" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="mailto:hyggedesignhub@gmail.com" class="hover:text-stone-900">hyggedesignhub@gmail.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                             <img src="img/phn.png" alt="Phone" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="tel:+917395908844" class="hover:text-stone-900">+91 7395908844</a>
+                        </li>
+                         <li class="flex items-center space-x-2">
+                            <img src="img/whtsp.png" alt="WhatsApp" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="https://wa.me/917305259539" class="hover:text-stone-900">+91 73052 59539</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Address Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Our Studio</h4>
+                    <p class="mt-4 space-y-2 text-stone-600">
+                        No.3/269 Pachiappan 8th Cross street,
+                        <br>Palavakkam, Chennai - 600041
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-12 border-t border-stone-200 pt-8 text-center text-stone-500">
+                <p>&copy; 2024 Hygge Interior Studio. All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#header" id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-stone-800 text-white rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50 hover:bg-stone-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+        </a>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // --- Back to Top Button Script (Improved) ---
+        const toTopButton = document.getElementById('back-to-top');
+
+        // Show button on scroll
+        window.addEventListener('scroll', () => {
+            // Show button after scrolling 300px
+            if (window.scrollY > 300) {
+                toTopButton.classList.remove('opacity-0');
+            } else {
+                toTopButton.classList.add('opacity-0');
+            }
+        });
+
+        // Smooth scroll to the top on click
+        toTopButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Stop the link from jumping
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+                
+    </script>
+
+</body>
+</html>
+

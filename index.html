@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title for Home Page -->
+    <title>Hygge Interior Studio | Home</title>
+    <meta name="description" content="Hygge Interior Studio is a Chennai-based design firm specializing in beautiful, functional, and cozy spaces. Contact us for a consultation.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to extend Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2127&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-bg {
+           background-image: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+        
+    </style>
+    
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Link to new index.html -->
+            <!-- Removed Logo Image -->
+            <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold font-serif text-stone-900">
+                <span>Hygge Interior Studio</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <!-- Updated navigation links -->
+                <a href="index.html" class="text-stone-900 font-semibold transition-colors">Home</a>
+                <a href="about.html" class="text-stone-600 hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="text-stone-600 hover:text-stone-900 transition-colors">Services</a>
+                <a href="projects.html" class="text-stone-600 hover:text-stone-900 transition-colors">Projects</a>
+                <a href="contact.html" class="text-stone-600 hover:text-stone-900 transition-colors">Contact</a>
+            </nav>
+            <a href="contact.html" class="hidden md:block bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900 transition-colors">Get a Quote</a>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <!-- Updated mobile navigation links -->
+            <a href="index.html" class="block py-2 text-stone-900 font-semibold">Home</a>
+            <a href="about.html" class="block py-2 text-stone-600 hover:text-stone-900">About</a>
+            <a href="services.html" class="block py-2 text-stone-600 hover:text-stone-900">Services</a>
+            <a href="projects.html" class="block py-2 text-stone-600 hover:text-stone-900">Projects</a>
+            <a href="contact.html" class="block py-2 text-stone-600 hover:text-stone-900">Contact</a>
+            <a href="contact.html" class="block mt-2 text-center bg-stone-800 text-white px-5 py-2 rounded-full hover:bg-stone-900">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Stays on Home Page) -->
+        <!-- MODIFIED: Changed h-screen to h-[90vh] md:h-screen for mobile -->
+        <section id="home" class="hero-bg h-[90vh] md:h-screen flex items-center justify-center text-white pt-20">
+            <!-- MODIFIED: Changed padding for mobile -->
+            <div class="bg-black/50 p-8 md:p-16 rounded-lg text-center backdrop-blur-sm mx-4">
+                <!-- MODIFIED: Responsive font size -->
+                <h1 class="text-4xl md:text-6xl font-bold font-serif leading-tight">Every Home Has a Story.</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-2xl text-stone-200">We're grateful to be a part of yours. Let's build beautiful homes, together.</p>
+                <a href="projects.html" class="mt-8 inline-block bg-white text-stone-800 px-8 py-3 rounded-full text-lg font-semibold hover:bg-stone-200 transition-transform hover:scale-105">View Our Work</a>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <!-- MODIFIED: Responsive padding -->
+        <section id="process" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="text-center mb-12 md:mb-16">
+                    <!-- MODIFIED: Responsive font size -->
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-800">Our Proven Process</h2>
+                    <p class="text-lg text-stone-600 mt-4">We guide you from initial concept to final installation.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10 text-center">
+                    <div class="bg-stone-50 p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow">
+                        <div class="inline-block bg-stone-800 text-white p-4 rounded-full mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V7.618a1 1 0 01.553-.894L9 4m0 16v-8m0 8h12l-5.447-2.724A1 1 0 0015 16.382V7.618a1 1 0 00-.553-.894L9 4m0 0v8m0 0l6 3m-6-3l6-3"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-stone-800 mb-3">1. Consultation</h3>
+                        <p class="text-stone-600">We start by understanding your vision, budget, and lifestyle needs in a one-on-one meeting.</p>
+                    </div>
+                    <div class="bg-stone-50 p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow">
+                        <div class="inline-block bg-stone-800 text-white p-4 rounded-full mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-stone-800 mb-3">2. Design &amp; Visualize</h3>
+                        <p class="text-stone-600">Our team creates detailed 3D models and mood boards so you can see your space come to life.</p>
+                    </div>
+                    <div class="bg-stone-50 p-8 rounded-lg border border-stone-200 hover:shadow-lg transition-shadow">
+                        <div class="inline-block bg-stone-800 text-white p-4 rounded-full mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-1 4h1m0 0h.01"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-stone-800 mb-3">3. Execution</h3>
+                        <p class="text-stone-600">We manage the project, coordinate with contractors, and oversee every detail of the final installation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Short snippet for Home) -->
+        <!-- MODIFIED: Responsive padding -->
+        <section id="home-about" class="py-10 md:py-10 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop" alt="Elegant interior living room" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <!-- MODIFIED: Responsive font size -->
+                    <h2 class="text-3xl md:text-4xl font-serif text-stone-900">Designing not just spaces, but emotions.</h2>
+                    <p class="text-stone-600 mt-6 text-lg leading-relaxed">At Hygge Interior Studio, we believe in creating spaces that feel warm, functional, and truly personal. We are a Chennai-based studio specializing in bespoke, minimal, and cozy interiors.</p>
+                    <a href="about.html" class="mt-8 inline-block text-stone-800 font-semibold border-b-2 border-stone-800 pb-1 hover:text-stone-900 hover:border-stone-900 transition-colors">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section (Stays on Home Page) -->
+        <!-- MODIFIED: Responsive padding -->
+        <section class="cta-bg bg-fixed">
+            <div class="bg-stone-900/70 py-16 md:py-24 text-center text-white px-6">
+                <!-- MODIFIED: Responsive font size -->
+                <h2 class="text-3xl md:text-4xl font-serif">Ready to start your design journey?</h2>
+                <p class="mt-4 text-lg text-stone-200 max-w-2xl mx-auto">Let's collaborate to create a space that you'll love for years to come.</p>
+                <a href="contact.html" class="mt-8 inline-block bg-white text-stone-800 px-8 py-3 rounded-full text-lg font-semibold hover:bg-stone-200 transition-transform hover:scale-105">Contact Us Today</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section (Modernized) -->
+    <footer class="bg-white text-stone-800 border-t border-stone-200">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-12 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="text-2xl font-bold font-serif text-stone-900">Hygge Interior Studio</a>
+                    <p class="mt-2 text-stone-600 max-w-xs">
+                        Designing not just spaces, but emotions—warm, functional, and
+                        truly personal.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://www.instagram.com/hygge_interior_studio" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="Instagram">
+                        <img src="img/insta.png" alt="Instagram Icon" class="w-7 h-7">
+                    </a>
+                    <!-- MODIFIED: Added alt text -->
+                    <a href="https://wa.me/917305259539" target="_blank" class="text-stone-700 hover:text-stone-900" aria-label="WhatsApp">
+                        <img src="img/whtsp.png" alt="WhatsApp Icon" class="w-7 h-7">
+                    </a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold">Explore</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-stone-600 hover:text-stone-900">Home</a></li>
+                        <li><a href="about.html" class="text-stone-600 hover:text-stone-900">About Us</a></li>
+                        <li><a href="services.html" class="text-stone-600 hover:text-stone-900">Services</a></li>
+                        <li><a href="projects.html" class="text-stone-600 hover:text-stone-900">Projects</a></li>
+                        <li><a href="contact.html" class="text-stone-600 hover:text-stone-900">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Get in Touch</h4>
+                    <ul class="mt-4 space-y-2 text-stone-600">
+                        <li class="flex items-center space-x-2">
+                             <img src="img/gmail.png" alt="Email" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="mailto:hyggedesignhub@gmail.com" class="hover:text-stone-900">hyggedesignhub@gmail.com</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                             <img src="img/phn.png" alt="Phone" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="tel:+917395908844" class="hover:text-stone-900">+91 7395908844</a>
+                        </li>
+                         <li class="flex items-center space-x-2">
+                            <img src="img/whtsp.png" alt="WhatsApp" class="w-5 h-5"> <!-- Updated path -->
+                            <a href="httpsS://wa.me/917305259539" class="hover:text-stone-900">+91 73052 59539</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Address Column -->
+                <div class="md:col-span-3">
+                    <h4 class="text-lg font-semibold">Our Studio</h4>
+                    <p class="mt-4 space-y-2 text-stone-600">
+                        No.3/269 Pachiappan 8th Cross street,
+                        <br>Palavakkam, Chennai - 600041
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-12 border-t border-stone-200 pt-8 text-center text-stone-500">
+                <p>&copy; 2024 Hygge Interior Studio. All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#header" id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-stone-800 text-white rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50 hover:bg-stone-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+        </a>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+                // --- Back to Top Button Script (Improved) ---
+        const toTopButton = document.getElementById('back-to-top');
+
+        // Show button on scroll
+        window.addEventListener('scroll', () => {
+            // Show button after scrolling 300px
+            if (window.scrollY > 300) {
+                toTopButton.classList.remove('opacity-0');
+            } else {
+                toTopButton.classList.add('opacity-0');
+            }
+        });
+
+        // Smooth scroll to the top on click
+        toTopButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Stop the link from jumping
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+
+</body>
+</html>
+
+
